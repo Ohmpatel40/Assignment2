@@ -1,0 +1,27 @@
+<!-- Name : OHM PATEL
+Student No : 301302945
+Date : 05/02/2022 -->
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target bg-dark p-0" id="ftco-navbar">
+  <div class="container w-100">
+    <a class="navbar-brand" href="index.html"><img src="/assets/images/logo.png" class="logo"/></a>
+
+    <div class="collapse navbar-collapse w-auto" id="ftco-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="/home" class="nav-link"><span>Home</span></a></li>
+        <li class="nav-item"><a href="/about" class="nav-link"><span>About</span></a></li>
+        <li class="nav-item"><a href="/services" class="nav-link"><span>Services</span></a></li>
+        <li class="nav-item"><a href="/projects" class="nav-link"><span>Projects</span></a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link"><span>Contact</span></a></li>
+        <li class="nav-item"><a href="/businessContact" class="nav-link"><span>Business Contacts</span></a></li>
+        <%if(typeof username == 'string' && username){%>
+          <li class="navbar-text"> Welcome,<%=username%>
+            <li class="nav-item"><a href="/logout" class="nav-link"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+            <%}else{%>
+              <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+              <%}%>
+          </li>
+      </ul>
+    </div>
+  </div>  
+</nav>
